@@ -14,7 +14,7 @@ class Weather extends Component {
           <h2>{this.props.temp}&#176;C</h2>
           <p>{this.props.weather} - {this.props.sky}</p>
 
-          {this.props.weather == 'Clouds' ? <img src={require('../../images/cloudy.png')} /> : <p>No</p>}
+          {this.props.weather == 'Clouds' ? <img src={require('../../images/cloudy.png')} /> : <p></p>}
           {this.props.weather == 'Clear' ? <img src={require('../../images/sunny.png')} /> : <p></p>}
           {this.props.weather == 'Rain' ? <img src={require('../../images/rain.png')} /> : <p></p>}
 
