@@ -1,0 +1,27 @@
+
+.Clouds {
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 20px;
+  border-bottom: 1px #e8eaed solid;
+  background-image: url(http://www.gazetteseries.co.uk/resources/images/5360796.jpg?display=1&htype=0&type=responsive-gallery);
+  background-size: cover;
+}
+
+.Rain {
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 20px;
+  border-bottom: 1px #e8eaed solid;
+  background-image: url(http://wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-drops-of-rain-from-sky-weather.jpg);
+  background-size: cover;
+}
+
+.Clear {
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 20px;
+  border-bottom: 1px #e8eaed solid;
+  background-image: url(https://crystalseye.files.wordpress.com/2011/08/dsc_0724.jpg);
+  background-size: cover;
+}
