@@ -19,7 +19,6 @@ class Meetup extends Component {
     axios.get(URL)
       .then((response) => {
         this.setState({ groups: response.data });
-        console.log(this.state.groups)
       })
       .catch((error) => {
         console.log(error);
