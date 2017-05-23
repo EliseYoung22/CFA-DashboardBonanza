@@ -40,9 +40,8 @@ class App extends Component {
         {/* <h1>Hi</h1> */}
         <Weather temp={this.state.temp} city={this.state.city} sky={this.state.sky} weather={this.state.weather} />
         <Meetup />
-      <Activity />
-      <Sleep/>
-
+        <Activity />
+        <Sleep/>
       </div>
     );
   }
