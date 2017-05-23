@@ -68,9 +68,11 @@ class Activity extends Component {
       <div>
         <Row>
           <Col className="col s4">
-            <div className="sleep card">
-              <h1> Steps </h1>
-              <p>{activity.summary.steps}</p>
+            <div className="steps card">
+              <h5> Today's steps </h5>
+              <h4>{activity.summary.steps}</h4>
+              <img className="shoe-img" src={require('../../images/shoes.png')} />
+              <p>of your 10000 target</p>
               <CircularProgressbar percentage={100} />
             </div>
           </Col>
