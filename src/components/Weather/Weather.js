@@ -9,8 +9,8 @@ class Weather extends Component {
 
       return (
         <div className = {this.props.weather}>
-          <h3>{this.props.city}</h3>
-          <h2>{this.props.temp}&#176;C</h2>
+          <h5>{this.props.city}</h5>
+          <h4>{this.props.temp}&#176;C</h4>
           <p>{this.props.weather} - {this.props.sky}</p>
           {this.props.weather == 'Clouds' ? <img src={require('../../images/cloudy.png')} /> : <p></p>}
           {this.props.weather == 'Clear' ? <img src={require('../../images/sunny.png')} /> : <p></p>}
