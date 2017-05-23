@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './Weather.css';
 
 
@@ -17,6 +16,8 @@ class Weather extends Component {
           {this.props.weather == 'Clouds' ? <img src={require('../../images/cloudy.png')} /> : <p></p>}
           {this.props.weather == 'Clear' ? <img src={require('../../images/sunny.png')} /> : <p></p>}
           {this.props.weather == 'Rain' ? <img src={require('../../images/rain.png')} /> : <p></p>}
+
+          {/* {this.props.forecast.map((fore, i) => <p key={i}>{fore.main.temp - 273.15}</p>)} */}
 
         </div>
 
