@@ -48,11 +48,18 @@ console.log(sleep);
 class Sleep extends Component {
   render() {
     return (
-      <div className="sleep card">
-        <h1> Sleep </h1>
-          <p>{sleep.summary.totalMinutesAsleep / 60.0} hours</p>
+      <div>
+        <Row>
+          <Col className="col s5">
+            <div className="sleep card">
+              <h1> Sleep </h1>
+              <p>{sleep.summary.totalMinutesAsleep / 60.0} hours</p>
+            </div>
+          </Col>
+        </Row>
 
-      </div>
+    </div>
+
     )
   }
 }

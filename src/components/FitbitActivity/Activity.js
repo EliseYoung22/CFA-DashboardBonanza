@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./Activity.css";
 import CircularProgressbar from 'react-circular-progressbar';
+import { Card, Row, Col } from 'react-materialize';
+
 
 
 const activity = {
@@ -63,11 +65,16 @@ console.log(activity);
 class Activity extends Component {
   render() {
     return (
-      <div className="steps">
-        <h1> Steps </h1>
-        <p>{activity.summary.steps}</p>
-        <CircularProgressbar percentage={100} />
-
+      <div>
+        <Row>
+          <Col className="col s4">
+            <div className="sleep card">
+              <h1> Steps </h1>
+              <p>{activity.summary.steps}</p>
+              <CircularProgressbar percentage={100} />
+            </div>
+          </Col>
+        </Row>
       </div>
     )
   }
