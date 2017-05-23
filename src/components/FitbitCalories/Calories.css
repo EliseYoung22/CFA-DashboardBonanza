@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+.caloriescard {
+  font-size: 30px;
+  background-image: url('http://res.cloudinary.com/devsvbpxr/image/upload/v1495515740/firee_sbajbm.jpg');
+  height: 300px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.caloriestext {
+  text-decoration: underline;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
