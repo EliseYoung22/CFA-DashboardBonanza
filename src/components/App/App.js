@@ -21,7 +21,7 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
   this.getWeather();
   };
 
@@ -41,10 +41,21 @@ class App extends Component {
     return (
       <div className="App">
         <Weather temp={this.state.temp} city={this.state.city} sky={this.state.sky} weather={this.state.weather} />
-          <Meetup />
-          <Activity />
-          <Sleep/>
-          <Calories />
+        <Row>
+          <Col className="col s4">
+            <Activity />
+          </Col>
+          <Col className="col s3">
+            <Sleep/>
+            <Calories />
+          </Col>
+          <Col className="col s5">
+            <Meetup />
+          </Col>
+        </Row>
+
+
+
       </div>
     );
   }

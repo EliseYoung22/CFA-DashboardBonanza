@@ -66,8 +66,6 @@ class Activity extends Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col className="col s4">
             <div className="steps card">
               <h5> Today's steps </h5>
               <h4>{activity.summary.steps}</h4>
@@ -75,8 +73,6 @@ class Activity extends Component {
               <p>of your 10000 target</p>
               <CircularProgressbar percentage={100} />
             </div>
-          </Col>
-        </Row>
       </div>
     )
   }

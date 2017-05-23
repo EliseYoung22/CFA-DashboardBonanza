@@ -30,7 +30,6 @@ class Meetup extends Component {
       return (
         <div>
           <row>
-            <div className="col s7">
             <div className="meetupcard card">
               <div className="redstripe" />
               <h3>Fitness <span className="meetup-font">meetup</span> in your area</h3>
@@ -38,7 +37,6 @@ class Meetup extends Component {
                 <hr className="tophr"/>
                 {this.state.groups.slice(0, 10).map((group, i) => <span key={i}><a key={i} href={group.link}>{group.name}</a> <hr/><br /></span>)}
               </div>
-            </div>
           </row>
         </div>
 
