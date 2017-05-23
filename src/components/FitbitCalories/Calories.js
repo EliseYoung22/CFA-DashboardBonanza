@@ -25,14 +25,10 @@ class Calories extends Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col className="col s4">
             <div className="caloriescard card">
               <h2> Calories Out </h2>
             <p className="caloriestext">{calories.summary.caloriesOut}</p>
             </div>
-          </Col>
-        </Row>
       </div>
     )
   }
