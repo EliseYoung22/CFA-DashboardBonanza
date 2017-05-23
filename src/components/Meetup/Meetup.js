@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Meetup.css';
+import { Card, Row, Col } from 'react-materialize';
 
 class Meetup extends Component {
   constructor(props) {
@@ -28,8 +29,17 @@ class Meetup extends Component {
     render() {
       return (
         <div>
-          <h3>Fitness Meetups in your area</h3>
-          {this.state.groups.slice(0, 10).map((group, i) => <span key={i}><a key={i} href={group.link}>{group.name}</a> <br /></span>)}
+          <row>
+            <div className="col s7">
+            <div className="meetupcard card">
+              <div className="redstripe" />
+              <h3>Fitness <span className="meetup-font">meetup</span> in your area</h3>
+              <div className="redstripe" />
+                <hr className="tophr"/>
+                {this.state.groups.slice(0, 10).map((group, i) => <span key={i}><a key={i} href={group.link}>{group.name}</a> <hr/><br /></span>)}
+              </div>
+            </div>
+          </row>
         </div>
 
       )

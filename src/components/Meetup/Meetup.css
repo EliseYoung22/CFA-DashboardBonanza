@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.meetup-font {
+  color: #e0393e;
+  font-family: 'Satisfy', cursive;
+  font-size: 60px;
+  margin-bottom: 50px;
+
+}
+
+.meetupcard {
+  width: 600px;
+  padding-top: 2px;
+  padding-bottom: 50px;
+}
+
+a:hover {
+  color:grey;
+
+}
+
+
+a {
+  color:black;
+  font-family: 'Raleway', sans-serif;
+}
+
+span {
+  font-size: 17px;
+}
+
+hr {
+  margin-top: 30px;
+
+}
+
+.tophr {
+  margin-bottom: 30px;
+  margin-top: -2px;
+}
+
+.redstripe {
+  background-color: #e0393e;
+  height: 70px;
+}
