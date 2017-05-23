@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Weather from '../Weather/Weather';
+import Meetup from '../Meetup/Meetup';
 import axios from 'axios';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
       <div className="App">
         <h1>Hi</h1>
         <Weather temp={this.state.temp} city={this.state.city} sky={this.state.sky} weather={this.state.weather} />
+        <Meetup />
       </div>
     );
   }
