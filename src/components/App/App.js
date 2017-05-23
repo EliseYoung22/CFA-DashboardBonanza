@@ -5,6 +5,9 @@ import Meetup from '../Meetup/Meetup';
 import axios from 'axios';
 import Activity from '../FitbitActivity/Activity';
 import Sleep from '../FitbitSleep/Sleep';
+import Calories from '../FitbitCalories/Calories';
+import { Card, Row, Col } from 'react-materialize';
+
 
 
 class App extends Component {
@@ -37,11 +40,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <h1>Hi</h1> */}
         <Weather temp={this.state.temp} city={this.state.city} sky={this.state.sky} weather={this.state.weather} />
-        <Meetup />
-        <Activity />
-        <Sleep/>
+          <Meetup />
+          <Activity />
+          <Sleep/>
+          <Calories />
       </div>
     );
   }
