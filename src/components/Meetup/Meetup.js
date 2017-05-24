@@ -17,13 +17,16 @@ class Meetup extends Component {
 
   getGroups () {
     const URL = 'https://api.meetup.com/find/events?text=fitness&key=1411443b5c771566373b7e1e493c5879&sign=true'
-    axios.get(URL)
-      .then((response) => {
-        this.setState({ groups: response.data });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setInterval(() => {
+      axios.get(URL)
+          .then((response) => {
+            this.setState({ groups: response.data })
+            console.log('hi')
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+    }, 2000);
     };
 
     render() {

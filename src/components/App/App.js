@@ -8,8 +8,6 @@ import Sleep from '../FitbitSleep/Sleep';
 import Calories from '../FitbitCalories/Calories';
 import { Card, Row, Col } from 'react-materialize';
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,28 +17,39 @@ class App extends Component {
       sky: '',
       weather: ''
     };
+    this.getWeather = this.getWeather.bind(this);
   }
 
   componentDidMount() {
-  this.getWeather();
+    this.getWeather();
+    setInterval(this.getWeather, 120000);
   };
 
-  getWeather () {
+  getWeather() {
     console.log('componentDidMount()');
     const URL = 'http://api.openweathermap.org/data/2.5/weather?id=6619279&APPID=efecab0f51c2a2f0fa547bf4b33164c0'
-    axios.get(URL)
-      .then((response) => {
-        this.setState({ temp: response.data.main.temp - 273.15, city:response.data.name, sky:response.data.weather[0].description, weather:response.data.weather[0].main });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      axios.get(URL)
+        .then((response) => {
+          this.setState({
+            temp: response.data.main.temp - 273.15,
+            city: response.data.name,
+            sky: response.data.weather[0].description,
+            weather: response.data.weather[0].main
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     };
 
   render() {
     return (
       <div className="App">
-        <Weather temp={this.state.temp} city={this.state.city} sky={this.state.sky} weather={this.state.weather} />
+        <Weather
+          temp={this.state.temp}
+          city={this.state.city}
+          sky={this.state.sky} 
+          weather={this.state.weather} />
         <Row>
           <Col className="col s4">
             <Activity />
@@ -53,9 +62,6 @@ class App extends Component {
             <Meetup />
           </Col>
         </Row>
-
-
-
       </div>
     );
   }

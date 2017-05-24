@@ -66,13 +66,13 @@ class Activity extends Component {
   render() {
     return (
       <div>
-            <div className="steps card">
-              <h5> Today's steps </h5>
-              <h4>{activity.summary.steps}</h4>
-              <img className="shoe-img" src={require('../../images/shoes.png')} />
-              <p>of your 10000 target</p>
-              <CircularProgressbar percentage={100} />
-            </div>
+        <div className="steps card">
+          <h5> Today's steps </h5>
+          <h4>{activity.summary.steps}</h4>
+          <img className="shoe-img" src={require('../../images/shoes.png')} />
+          <p>of your 10000 target</p>
+          <CircularProgressbar percentage={100} />
+        </div>
       </div>
     )
   }
