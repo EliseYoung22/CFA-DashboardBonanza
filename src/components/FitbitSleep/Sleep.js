@@ -18,12 +18,11 @@ class Sleep extends Component {
   render() {
     return (
       <div>
-            <div className="sleepcard card">
-              <h1>{sleep.summary.totalMinutesAsleep / 60.0} hours sleep </h1>
-            {/* <p className="sleeptext">{sleep.summary.totalMinutesAsleep / 60.0} hours</p> */}
-            </div>
+        <div className="sleepcard card">
+          <h1>{sleep.summary.totalMinutesAsleep / 60.0} hours sleep </h1>
+          {/* <p className="sleeptext">{sleep.summary.totalMinutesAsleep / 60.0} hours</p> */}
+        </div>
     </div>
-
     )
   }
 }
