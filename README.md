@@ -4,6 +4,6 @@ CFA group project focusing on using API calls to create a dynamic dashboard with
 The project helped develop understanding of handling API requests and states. Primary challenges were implementing Fitbit API (unsuccessful) and changing weather component image/background depending on information received from API (further refactoring required).
 
 ## Collaborators
-[Elise](https://github.com/EliseYoung22)
-[Charlotte](https://github.com/charhagelin)
+[Elise](https://github.com/EliseYoung22),
+[Charlotte](https://github.com/charhagelin),
 [Marlon](https://github.com/marlbones)
